@@ -1,4 +1,4 @@
-export const colaItem = [
+export const cakeItem = [
   {
     name: 'Original Cola',
     cost: 1000,
