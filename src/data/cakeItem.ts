@@ -11,54 +11,63 @@ import { CakeItemData } from '../types/data';
 
 const cakeItem: CakeItemData[] = [
   {
+    id: 1,
     name: 'carrot cake',
     cost: 7000,
     img: carrotCake,
     count: 5,
   },
   {
+    id: 2,
     name: 'cherry cake',
     cost: 6000,
     img: cherryCake,
     count: 5,
   },
   {
+    id: 3,
     name: 'choco cake',
     cost: 6500,
     img: chocoCake,
     count: 5,
   },
   {
+    id: 4,
     name: 'pink cake',
     cost: 6000,
     img: pinkCake,
     count: 5,
   },
   {
+    id: 5,
     name: 'strawberry cake',
     cost: 7500,
     img: strawberryCake,
     count: 5,
   },
   {
+    id: 6,
     name: 'vanilla cake',
     cost: 7000,
     img: vanillaCake,
     count: 5,
   },
   {
+    id: 7,
     name: 'dark cake',
     cost: 6000,
     img: darkCake,
     count: 5,
   },
   {
+    id: 8,
     name: 'raspberry cake',
     cost: 6000,
     img: raspberryCake,
     count: 5,
   },
   {
+    id: 9,
     name: 'salty cake',
     cost: 7000,
     img: saltyCake,
