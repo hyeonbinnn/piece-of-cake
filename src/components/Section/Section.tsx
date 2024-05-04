@@ -1,12 +1,12 @@
-import CakeList from '../Cake/CakeList';
 import SpareCart from '../Cart/SpareCart';
 import TotalCart from '../Cart/TotalCart';
+import Slider from '../Slider/Slider';
 
 const Section = () => {
   return (
     <main>
       <section className="section1">
-        <CakeList />
+        <Slider />
         <SpareCart />
       </section>
       <section className="section2">
