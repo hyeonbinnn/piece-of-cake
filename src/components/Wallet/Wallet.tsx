@@ -1,5 +1,5 @@
 const Wallet = () => {
-  return <div>Wallet</div>;
+  return <div></div>;
 };
 
 export default Wallet;
