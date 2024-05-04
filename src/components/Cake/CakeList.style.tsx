@@ -10,7 +10,9 @@ export const CakeUl = styled.ul`
   gap: 12px;
 `;
 
-export const CakeLi = styled.li``;
+export const CakeLi = styled.li`
+  min-width: 120px;
+`;
 
 export const CakeBtn = styled.button`
   box-shadow: 0px 0px 4px var(--box);

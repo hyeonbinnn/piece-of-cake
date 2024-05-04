@@ -1,8 +1,11 @@
-import cakeItem from '../../data/cakeItem';
 import { CakeItemData } from '../../types/data';
 import * as S from './CakeList.style';
 
-const CakeList = () => {
+interface CakeListProps {
+  cakeItem: CakeItemData[];
+}
+
+const CakeList = ({ cakeItem }: CakeListProps) => {
   return (
     <S.Wrapper>
       <S.H2 className="a11y-hidden">판매 케이크</S.H2>
