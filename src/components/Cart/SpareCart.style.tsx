@@ -8,14 +8,7 @@ export const Container = styled.div`
   margin-top: 20px;
 `;
 
-export const BalanceBox = styled.div`
-  background: var(--sub-bg);
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 10px;
-`;
+export const BalanceBox = styled.div``;
 
 export const H2 = styled.h2``;
 
@@ -46,3 +39,5 @@ export const CartUl = styled.ul`
   overflow-y: auto;
   padding: 12px;
 `;
+
+export const CartLi = styled.li``;

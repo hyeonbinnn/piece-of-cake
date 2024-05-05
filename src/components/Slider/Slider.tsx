@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import * as S from './Slider.style';
+import arrow from '../../assets/arrow.svg';
 import CakeList from './../Cake/CakeList';
 import cakeItem from '../../data/cakeItem';
-import arrow from '../../assets/arrow.svg';
 import { CakeItemData } from '../../types/data';
 
 const Slider = () => {

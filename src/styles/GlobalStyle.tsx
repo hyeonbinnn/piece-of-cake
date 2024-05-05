@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --main-bg: #fff8de;
-    --sub-bg: #ffe7ec;
+    --sub-bg: #ffecf0;
     --section: #fff;
     --main-color: #573c42;
     --sub-color: #fff;
@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
 
   section {
     background-color: var(--section);
-    padding: 30px;
     color: var(--main-color);
   }
 
@@ -69,18 +68,30 @@ const GlobalStyle = createGlobalStyle`
     position: absolute;
   }
 
+  .section1 {
+    padding: 30px;
+  }
+
+  .section2 {
+    padding: 30px 20px;
+  }
+
   /* PC */
-  @media (min-width: 748px) {
+  @media (min-width: 768px) {
   body {
     background: var(--main-bg);
+    padding-bottom: 50px;
   }
 
   main {
-    width: 748px;
-    margin: 0px auto 60px;
+    width: 768px;
+    margin: 0px auto;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    gap: 20px;
+  }
+
+  .section2 {
+    flex: 1;
   }
 
   h1 {
@@ -89,10 +100,24 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Mobile */
-  @media (max-width: 747px) {
+  @media (max-width: 767px) {
   h1 {
     margin: 20px 0px 18px 0px;
   }
+
+  .section2 {
+    margin-top: -30px;
+    padding: 30px;
+  }
+}
+
+.color-box {
+  background: var(--sub-bg);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
 }
 
 .title, p {
