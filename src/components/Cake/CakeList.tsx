@@ -13,7 +13,7 @@ const CakeList = ({ cakeItem }: CakeListProps) => {
         {cakeItem.map((item: CakeItemData) => (
           <S.CakeLi key={item.id}>
             <S.CakeBtn type="button">
-              <S.CakeImg src={item.img} alt={item.name} />
+              <S.CakeImg src={item.img} alt={item.name} loading="lazy" />
               <S.CakeName>{item.name}</S.CakeName>
               <S.CakeCost>₩ {item.cost.toLocaleString()}</S.CakeCost>
             </S.CakeBtn>
