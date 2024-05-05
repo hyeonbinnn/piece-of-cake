@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-type ButtonType = {
+type ButtonProps = {
   text: string;
-  className: string;
+  className?: string;
 };
 
-const Button = ({ text, className }: ButtonType) => {
+const Button = ({ text, className }: ButtonProps) => {
   return (
     <CommonBtn type="button" className={className}>
       {text}
