@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { CartUl, CartLi } from './SpareCart.style';
+import { CommonBtn } from '../Button/Button';
 
 export const Wrapper = styled.div``;
 
@@ -16,7 +17,17 @@ export const GetCartUl = styled(CartUl)`
 
 export const GetCartLi = styled(CartLi)``;
 
-export const TotalMoney = styled.p`
-  float: right;
+export const BottomBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
   margin-top: 15px;
 `;
+
+export const ManualBtn = styled(CommonBtn)`
+  width: 80px;
+  height: 25px;
+`;
+
+export const TotalMoney = styled.p``;

@@ -15,7 +15,7 @@ const Button = ({ text, className }: ButtonProps) => {
 
 export default Button;
 
-const CommonBtn = styled.button`
+export const CommonBtn = styled.button`
   box-shadow: 0px 0px 4px var(--box);
   border-radius: 5px;
   font-size: 13px;
