@@ -11,7 +11,7 @@ export const H2 = styled.h2``;
 
 export const P = styled.p``;
 
-export const InputBox = styled.div`
+export const ChargeBox = styled.div`
   display: grid;
   grid-template-columns: auto calc((100% - 24px) / 4);
   grid-template-rows: 32px;
