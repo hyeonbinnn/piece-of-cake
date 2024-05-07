@@ -13,7 +13,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  background-color: var(--sub-bg);
+  background-color: var(--section);
   border: 10px solid var(--border);
   border-radius: 5px;
   width: 80%;
