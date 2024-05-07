@@ -3,11 +3,12 @@ import styled from 'styled-components';
 type ButtonProps = {
   text: string;
   className?: string;
+  onClick?: () => void;
 };
 
-const Button = ({ text, className }: ButtonProps) => {
+const Button = ({ text, className, onClick }: ButtonProps) => {
   return (
-    <CommonBtn type="button" className={className}>
+    <CommonBtn type="button" className={className} onClick={onClick}>
       {text}
     </CommonBtn>
   );
