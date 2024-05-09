@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { CartUl, CartLi } from './SpareCart.style';
-import { CommonBtn } from '../Button/Button';
+import { CartUl, CartLi, CartItemImg, CartItemName, CartItemStrong } from './SpareCart.style';
+import { CommonBtn } from '../Button/ClickButton';
 
 export const Wrapper = styled.div``;
 
@@ -17,6 +17,12 @@ export const GetCartUl = styled(CartUl)`
 
 export const GetCartLi = styled(CartLi)``;
 
+export const GetCartImg = styled(CartItemImg)``;
+
+export const GetCartName = styled(CartItemName)``;
+
+export const GetCartStrong = styled(CartItemStrong)``;
+
 export const BottomBox = styled.div`
   display: flex;
   justify-content: space-between;
@@ -30,4 +36,4 @@ export const ManualBtn = styled(CommonBtn)`
   height: 25px;
 `;
 
-export const TotalMoney = styled.p``;
+export const TotalPrice = styled.p``;

@@ -23,7 +23,6 @@ const ManualModal = ({ onClose }: OnCloseProps) => {
         <S.CloseBtn onClick={onClose}>
           <S.Img src={close} alt="닫기 버튼" />
         </S.CloseBtn>
-
         <S.ManualUl>
           {descList.map((desc: string, index: number) => (
             <S.ManualLi key={index}>
