@@ -143,7 +143,7 @@ const cakeItem: CakeItemData[] = [
     name: 'heart box',
     cost: 8000,
     img: heartBox,
-    count: 1,
+    count: 2,
   },
 ];
 
