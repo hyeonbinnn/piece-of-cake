@@ -1,9 +1,9 @@
+import * as S from './Wallet.style';
+import ClickButton from '../Button/ClickButton';
 import { useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { amountState } from '../../state/atoms/atoms';
 import { Label, InputMoney } from '../Cart/SpareCart.style';
-import * as S from './Wallet.style';
-import Button from '../Button/Button';
 
 const Wallet = () => {
   const [amount, setAmount] = useRecoilState(amountState);
@@ -15,11 +15,21 @@ const Wallet = () => {
   };
 
   const handleRecharge = (): void => {
-    const inputValueNum = parseInt(inputValue);
-    if (!isNaN(inputValueNum)) {
-      setAmount((prevAmount) => prevAmount + inputValueNum);
-      setInputValue('');
+    if (!inputValue) {
+      alert('충전 금액을 입력해주세요.');
+      return;
     }
+
+    const inputValueNum = parseInt(inputValue);
+
+    if (inputValueNum <= 0) {
+      alert('올바른 금액을 입력해주세요.');
+      setInputValue('');
+      return;
+    }
+
+    setAmount((prevAmount) => prevAmount + inputValueNum);
+    setInputValue('');
   };
 
   return (
@@ -41,7 +51,7 @@ const Wallet = () => {
           value={inputValue}
           onChange={handleInputChange}
         />
-        <Button text="충천" onClick={handleRecharge} />
+        <ClickButton text="충천" onClick={handleRecharge} />
       </S.ChargeBox>
     </S.Wrapper>
   );
