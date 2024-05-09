@@ -40,4 +40,35 @@ export const CartUl = styled.ul`
   padding: 12px;
 `;
 
-export const CartLi = styled.li``;
+export const CartLi = styled.li`
+  background: var(--section);
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &:nth-child(n + 2) {
+    margin-top: 6px;
+  }
+`;
+
+export const CartItemImg = styled.img`
+  width: 33px;
+  height: 33px;
+`;
+
+export const CartItemName = styled.span``;
+
+export const CartItemStrong = styled.strong`
+  font-size: 14px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: auto;
+`;
