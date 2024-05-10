@@ -19,7 +19,7 @@ const ManualModal = ({ onClose }: OnCloseProps) => {
   return (
     <S.Container>
       <S.Wrapper>
-        <S.H2>Piece of Cake 이용 방법</S.H2>
+        <S.H2>🍰 Piece of Cake 이용 방법</S.H2>
         <S.CloseBtn onClick={onClose}>
           <S.Img src={close} alt="닫기 버튼" />
         </S.CloseBtn>
