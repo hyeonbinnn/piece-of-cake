@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface CakeBtnProps {
+  countZero?: boolean;
+}
+
 export const Wrapper = styled.div``;
 
 export const H2 = styled.h2``;
@@ -14,16 +18,12 @@ export const CakeLi = styled.li`
   min-width: 120px;
 `;
 
-export const CakeBtn = styled.button`
+export const CakeBtn = styled.button<CakeBtnProps>`
   box-shadow: 0px 0px 4px var(--box);
   border-radius: 10px;
   padding: 11px 10px 9px;
   position: relative;
   width: 100%;
-
-  .active {
-    box-shadow: 0 0 0 3px #6327fe;
-  }
 
   img,
   span {
