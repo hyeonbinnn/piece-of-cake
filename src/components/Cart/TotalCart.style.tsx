@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { CartUl, CartLi, CartItemImg, CartItemName, CartItemStrong } from './SpareCart.style';
 import { CommonBtn } from '../Button/ClickButton';
+import refresh from '../../assets/refresh.svg';
 
 export const Wrapper = styled.div``;
 
@@ -30,10 +31,21 @@ export const BottomBox = styled.div`
   height: 20px;
   margin-top: 15px;
 `;
+export const ButtonBox = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export const ManualBtn = styled(CommonBtn)`
-  width: 80px;
+  width: 60px;
   height: 25px;
+  margin-right: 9px;
+`;
+
+export const RefreshBtn = styled.button`
+  width: 21px;
+  height: 21px;
+  background: url(${refresh}) no-repeat center/cover;
 `;
 
 export const TotalPrice = styled.p``;

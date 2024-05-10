@@ -3,17 +3,21 @@ import Wallet from '../Wallet/Wallet';
 import ManualModal from '../Modal/ManualModal';
 import useModal from '../../hooks/useModal';
 import { SelectedCakeItem, totalCartItemState } from '../../state/atoms/atoms';
-import { useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 
 const TotalCart = () => {
   const { isModalOpen, openModal, closeModal } = useModal();
-  const cartItem = useRecoilValue(totalCartItemState);
+  const [cartItem, setCartItem] = useRecoilState(totalCartItemState);
 
   const calculateTotalPrice = (): number => {
     return cartItem.reduce(
       (total: number, item: SelectedCakeItem) => total + item.cost * item.quantity,
       0
     );
+  };
+
+  const cartItemRefresh = (): void => {
+    setCartItem([]);
   };
   return (
     <>
@@ -30,7 +34,10 @@ const TotalCart = () => {
           ))}
         </S.GetCartUl>
         <S.BottomBox>
-          <S.ManualBtn onClick={openModal}>설명서</S.ManualBtn>
+          <S.ButtonBox>
+            <S.ManualBtn onClick={openModal}>설명서</S.ManualBtn>
+            <S.RefreshBtn onClick={cartItemRefresh} />
+          </S.ButtonBox>
           <S.TotalPrice>총금액 : {calculateTotalPrice().toLocaleString()}원</S.TotalPrice>
         </S.BottomBox>
       </S.Wrapper>
