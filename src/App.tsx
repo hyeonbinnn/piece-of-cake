@@ -1,28 +1,20 @@
-import { RecoilRoot } from 'recoil';
-import logo from './assets/logo.webp';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import MainPage from './pages/MainPage/MainPage';
+import StartPage from './pages/StartPage/StartPage';
 import GlobalStyle from './styles/GlobalStyle';
-import Section from './components/Section/Section';
-import styled from 'styled-components';
 
 function App() {
   return (
-    <RecoilRoot>
+    <>
       <GlobalStyle />
-      <H1>
-        <LogoImg className="logo" src={logo} alt="페이지 메인 로고" />
-      </H1>
-      <Section />
-    </RecoilRoot>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          {/* <Route path="/" element={<StartPage />} /> */}
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
 export default App;
-
-const H1 = styled.h1`
-  text-align: center;
-`;
-
-const LogoImg = styled.img`
-  width: 386px;
-  max-width: calc(100% - (97px * 2));
-`;
