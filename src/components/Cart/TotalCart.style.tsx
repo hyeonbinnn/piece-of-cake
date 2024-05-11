@@ -39,12 +39,18 @@ export const ButtonBox = styled.div`
 export const ManualBtn = styled(CommonBtn)`
   width: 60px;
   height: 25px;
-  margin-right: 9px;
+  margin-right: 8px;
+`;
+
+export const LogoutBtn = styled(CommonBtn)`
+  width: 70px;
+  height: 25px;
+  margin-right: 8px;
 `;
 
 export const RefreshBtn = styled.button`
-  width: 21px;
-  height: 21px;
+  width: 18px;
+  height: 18px;
   background: url(${refresh}) no-repeat center/cover;
 `;
 

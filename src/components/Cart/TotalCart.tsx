@@ -36,6 +36,7 @@ const TotalCart = () => {
         <S.BottomBox>
           <S.ButtonBox>
             <S.ManualBtn onClick={openModal}>설명서</S.ManualBtn>
+            <S.LogoutBtn>로그아웃</S.LogoutBtn>
             <S.RefreshBtn onClick={cartItemRefresh} />
           </S.ButtonBox>
           <S.TotalPrice>총금액 : {calculateTotalPrice().toLocaleString()}원</S.TotalPrice>
