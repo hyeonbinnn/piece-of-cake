@@ -29,7 +29,6 @@ const GlobalStyle = createGlobalStyle`
 
   section {
     background-color: var(--section);
-    color: var(--main-color);
   }
 
   ul,
@@ -95,14 +94,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    margin: 40px 0px 60px 0px;
-  }
+    margin: 60px 0px 60px 0px;
+    }
   }
 
   /* Mobile */
   @media (max-width: 767px) {
   h1 {
-    margin: 20px 0px 18px 0px;
+    margin: 40px 0px 18px 0px;
   }
 
   .section2 {
