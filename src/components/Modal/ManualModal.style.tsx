@@ -36,8 +36,8 @@ export const H2 = styled.h2`
 
 export const CloseBtn = styled.button`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 17px;
+  right: 15px;
 `;
 
 export const Img = styled.img`
