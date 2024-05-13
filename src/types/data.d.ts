@@ -5,3 +5,7 @@ export interface CakeItemData {
   img: string;
   count: number;
 }
+
+interface OnCloseProps {
+  onClose: () => void;
+}

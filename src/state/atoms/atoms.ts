@@ -28,3 +28,9 @@ export const totalCartItemState = atom<SelectedCakeItem[]>({
   key: 'totalCartItemState',
   default: [],
 });
+
+// 사용자명
+export const usernameState = atom({
+  key: 'usernameState',
+  default: '',
+});
