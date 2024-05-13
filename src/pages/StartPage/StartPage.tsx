@@ -1,11 +1,11 @@
 import Header from '../../components/Header/Header';
-import LoginForm from '../../components/Login/LoginForm';
+import UserForm from '../../components/User/UserForm';
 
 const StartPage = () => {
   return (
     <>
       <Header isStartPage={true} />
-      <LoginForm />
+      <UserForm />
     </>
   );
 };
