@@ -34,17 +34,6 @@ export const H2 = styled.h2`
   margin-bottom: 25px;
 `;
 
-export const CloseBtn = styled.button`
-  position: absolute;
-  top: 17px;
-  right: 15px;
-`;
-
-export const Img = styled.img`
-  width: 30px;
-  height: 30px;
-`;
-
 export const ManualUl = styled.ul`
   line-height: 1.2;
 `;

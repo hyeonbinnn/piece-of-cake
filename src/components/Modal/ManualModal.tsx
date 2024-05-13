@@ -1,9 +1,6 @@
 import * as S from './ManualModal.style';
-import close from '../../assets/close.svg';
-
-interface OnCloseProps {
-  onClose: () => void;
-}
+import { OnCloseProps } from '../../types/data';
+import CloseButton from '../Button/CloseButton';
 
 const ManualModal = ({ onClose }: OnCloseProps) => {
   const descList: string[] = [
@@ -20,9 +17,7 @@ const ManualModal = ({ onClose }: OnCloseProps) => {
     <S.Container>
       <S.Wrapper>
         <S.H2>🍰 Piece of Cake 이용 방법</S.H2>
-        <S.CloseBtn onClick={onClose}>
-          <S.Img src={close} alt="닫기 버튼" />
-        </S.CloseBtn>
+        <CloseButton onClose={onClose} />
         <S.ManualUl>
           {descList.map((desc: string, index: number) => (
             <S.ManualLi key={index}>
