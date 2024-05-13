@@ -5,7 +5,7 @@ export const Wrapper2 = styled(Wrapper)`
   padding: 20px 0px;
 `;
 
-export const FirstBox = styled.div`
+export const IdBox = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;

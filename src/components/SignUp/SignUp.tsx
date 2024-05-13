@@ -7,11 +7,11 @@ const SignUp = () => {
     <Main>
       <S.Wrapper2>
         <Form>
-          <S.Label>닉네임</S.Label>
-          <S.FirstBox>
+          <S.Label>아이디</S.Label>
+          <S.IdBox>
             <S.Input2 type="text" />
             <S.CheckBtn className="get-btn">중복</S.CheckBtn>
-          </S.FirstBox>
+          </S.IdBox>
           <S.Label>비밀번호</S.Label>
           <S.Input2 type="password" />
           <S.Label>비밀번호 재확인</S.Label>
