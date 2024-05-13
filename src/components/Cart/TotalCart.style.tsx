@@ -42,12 +42,6 @@ export const ManualBtn = styled(CommonBtn)`
   margin-right: 8px;
 `;
 
-export const LogoutBtn = styled(CommonBtn)`
-  width: 70px;
-  height: 25px;
-  margin-right: 8px;
-`;
-
 export const RefreshBtn = styled.button`
   width: 18px;
   height: 18px;
