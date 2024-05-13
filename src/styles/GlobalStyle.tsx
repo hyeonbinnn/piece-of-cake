@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
     --section: #fff;
     --main-color: #573c42;
     --sub-color: #fff;
+    --error:#ec687b;
     --button: #905e5d;
     --box: #8e55559a;
     --border: #86525256;
