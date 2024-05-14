@@ -2,18 +2,8 @@ import styled from 'styled-components';
 import { Wrapper } from './ManualModal.style';
 
 export const Wrapper2 = styled(Wrapper)`
-  width: 70%;
-  max-width: 500px;
-`;
-
-export const H2 = styled.h2`
-  text-align: center;
-`;
-
-export const WelcomeImg = styled.img`
-  width: 400px;
-  max-width: calc(100% - (10px * 2));
-  height: auto;
+  width: 60%;
+  max-width: 300px;
 `;
 
 export const ContentBox = styled.div`
@@ -22,15 +12,15 @@ export const ContentBox = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 20px 0 15px;
+  margin: 10px 0;
 `;
 
 export const ContentP = styled.p`
-  font-size: 16px;
+  font-size: 17px;
 `;
 
 export const Username = styled.span`
-  font-size: 20px;
+  font-size: 25px;
 `;
 
 export const GoBox = styled.div`
@@ -41,7 +31,7 @@ export const GoBox = styled.div`
 
 export const GoName = styled.span`
   font-weight: bold;
-  font-size: 17px;
+  font-size: 18px;
 `;
 
 export const GoBtn = styled.button``;
