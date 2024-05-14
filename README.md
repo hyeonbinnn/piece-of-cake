@@ -1,4 +1,5 @@
 # 🍰 Piece of Cake
+![케이크](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/fc7d2199-61c4-4a5b-922b-671964f57bed)
 
 <br>
 <br>
@@ -35,12 +36,18 @@
 │  │  ├─ 📂 Button
 │  │  ├─ 📂 Cake
 │  │  ├─ 📂 Cart
+│  │  ├─ 📂 Header
 │  │  ├─ 📂 Modal
 │  │  ├─ 📂 Section
 │  │  ├─ 📂 Slider
+│  │  ├─ 📂 User
 │  │  └─ 📂 Wallet
 │  ├─ 📂 data
 │  ├─ 📂 hooks
+│  ├─ 📂 pages
+│  │  ├─ 📂 ErrorPage
+│  │  ├─ 📂 MainPage
+│  │  └─ 📂 StartPage
 │  ├─ 📂 state
 │  │  ├─ 📂 atoms
 │  │  └─ 📂 selectors
@@ -83,24 +90,24 @@
 <br>
 
 ## 구현 기능
-|   벤딩머신 입장   |   소지금 충전  |
+|   초기 화면   |   메뉴얼 모달  |
 | :---------: | :---------: |
-| ![시작페이지](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/26fadc77-10cc-4438-8e56-3080bddc781e) | ![소지금](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/420c3ee2-de64-4f37-9c92-096e39dc7b23) |
+| ![메인](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/2593d3ca-6159-4332-aa52-0279f5817b39) | ![메뉴얼](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/667b91dd-da61-4cc3-b91c-921d5b96067a) |
 <br>
 
-|  입금액 충전 |  아이템 획득   |
+|  소지금 충전 |  입금액 충전   |
 |:---------: | :---------: |
-| ![입금액](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/5d2dfc67-6e22-43b0-be1c-a2bdc9d0e6c8) | ![장바구니 획득](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/f5e48b54-4e42-450f-af6e-511d75c02271) |
+| ![소지금](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/508bfb65-3e46-4f14-9dbe-a8eacee00ce2) | ![입금액](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/d250be3c-abcf-4ef8-856b-a7467062b871) |
 <br>
 
-|  잔액 반환 | 장바구니 초기화  |
+| 아이템 획득 |  장바구니 초기화  |
 | :---------: | :---------: |
-| ![잔액 반환](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/08eced0c-6b51-4202-b3af-5a4b76abc749) | ![초기화](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/09f87d8d-bbea-48ce-bc16-f865b3a8dd7a) |
+| ![획득](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/c5031ece-3970-4af3-8d21-87f2d86ca734) | ![초기화](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/706ab06e-33ef-4872-aa0a-5b93b6b92ef1) |
 <br>
 
-|  메뉴얼 모달  |  404 에러  |
+|  거스름돈 반환  |  404 에러  |
 | :---------: | :---------: |
-| ![설명서](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/7d2856bb-8b81-4344-8c3e-39ce4b82d5bf) | ![404](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/26375067-5837-42ff-9e71-d31279ef9beb) |
+| ![반환](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/db826a62-61dc-4bc0-b385-770ac68bb4d3) | ![에러](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/d991c250-534d-45d9-8960-bb1f2dbaf3f9) |
 
 <br>
 <br>
