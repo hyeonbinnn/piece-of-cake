@@ -1,5 +1,4 @@
 # 🍰 Piece of Cake
-![조각케이크 메인](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/c9bc3ef3-3b7d-4fdb-a331-abf96ba242fe)
 
 <br>
 <br>
@@ -84,14 +83,24 @@
 <br>
 
 ## 구현 기능
-|   Cake 슬라이더   |   소지금 충전    |  입금액 충전 &  잔액 반환  |
-| :---------: | :---------: | :---------: |
-|  |  |  |
+|   벤딩머신 입장   |   소지금 충전  |
+| :---------: | :---------: |
+| ![시작페이지](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/26fadc77-10cc-4438-8e56-3080bddc781e) | ![소지금](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/420c3ee2-de64-4f37-9c92-096e39dc7b23) |
 <br>
 
-|   아이템 획득   |   장바구니 획득    |  메뉴얼 모달  |
-| :---------: | :---------: | :---------: |
-|  | | |
+|  입금액 충전 |  아이템 획득   |
+|:---------: | :---------: |
+| ![입금액](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/5d2dfc67-6e22-43b0-be1c-a2bdc9d0e6c8) | ![장바구니 획득](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/f5e48b54-4e42-450f-af6e-511d75c02271) |
+<br>
+
+|  잔액 반환 | 장바구니 초기화  |
+| :---------: | :---------: |
+| ![잔액 반환](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/08eced0c-6b51-4202-b3af-5a4b76abc749) | ![초기화](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/09f87d8d-bbea-48ce-bc16-f865b3a8dd7a) |
+<br>
+
+|  메뉴얼 모달  |  404 에러  |
+| :---------: | :---------: |
+| ![설명서](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/7d2856bb-8b81-4344-8c3e-39ce4b82d5bf) | ![404](https://github.com/hyeonbinnn/piece-of-cake/assets/117449788/26375067-5837-42ff-9e71-d31279ef9beb) |
 
 <br>
 <br>
