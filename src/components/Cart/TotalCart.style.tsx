@@ -13,7 +13,7 @@ export const H2 = styled.h2`
 `;
 
 export const GetCartUl = styled(CartUl)`
-  min-height: 400px;
+  height: 400px;
 `;
 
 export const GetCartLi = styled(CartLi)``;
