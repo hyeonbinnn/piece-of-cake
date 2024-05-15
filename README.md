@@ -64,8 +64,8 @@
 ## 사용 기술
 #### [ FrontEnd ]
 <div>
-<img src="https://img.shields.io/badge/React-61DAFB?style=square&logo=react&logoColor=black">
 <img src="https://img.shields.io/badge/typescript-3178C6?style=square&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/React-61DAFB?style=square&logo=react&logoColor=black">
 <img src="https://img.shields.io/badge/Recoil-3578E5?style=square&logo=recoil&logoColor=white">
 <img src="https://img.shields.io/badge/Styled Components-DB7093?style=square&logo=styled components&logoColor=white">
 </div>
@@ -76,6 +76,7 @@
 ```
 "react": "^18.2.0",
 "react-dom": "^18.2.0",
+"react-hook-form": "^7.51.4",
 "react-router-dom": "^6.23.0",
 "react-scripts": "5.0.1",
 "recoil": "^0.7.7",
