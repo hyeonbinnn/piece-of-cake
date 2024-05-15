@@ -8,12 +8,12 @@ import {
   selectedItemState,
   totalCartItemState,
 } from '../../state/atoms/atoms';
-import { totalAmountState } from './../../state/selectors/selector';
+import { totalAmountSelector } from './../../state/selectors/selector';
 import { SelectedCakeItem } from '../../state/atoms/atoms';
 import ClickButton from '../Button/ClickButton';
 
 const SpareCart = () => {
-  const totalAmount = useRecoilValue(totalAmountState);
+  const totalAmount = useRecoilValue(totalAmountSelector);
   const [amount, setAmount] = useRecoilState(amountState);
   const [balance, setBalance] = useRecoilState(balanceState);
   const [selectedItem, setSelectedItem] = useRecoilState(selectedItemState);
