@@ -34,6 +34,7 @@ const UserForm = () => {
               id="username"
               type="text"
               placeholder="닉네임"
+              aria-invalid={errors.username ? 'true' : 'false'}
               {...register('username', {
                 required: '닉네임은 필수 입력입니다.',
                 maxLength: {
@@ -41,8 +42,9 @@ const UserForm = () => {
                   message: '닉네임은 4자리 이하로 입력해주세요.',
                 },
               })}
+              autoFocus
             />
-            {errors.username && <S.Error>{errors.username.message}</S.Error>}
+            {errors.username && <S.Error role="alert">{errors.username.message}</S.Error>}
 
             <S.StartBtn type="submit" disabled={isSubmitting} className="get-btn">
               입장
