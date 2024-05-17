@@ -20,7 +20,7 @@
 ### 🍰 Piece of Cake 벤딩머신
 >**구현 기간 : 2024.04.28 ~ 2024.04.30** <br>
 >
->**배포 사이트 :**  <strong>[배포 URL 바로가기]()</strong>
+>**배포 사이트 :**  <strong>[배포 URL 바로가기](https://piece-of-cake-store.netlify.app/)</strong>
 
 <br>
 <br>
