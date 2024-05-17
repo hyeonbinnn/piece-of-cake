@@ -25,14 +25,14 @@ const Slider = () => {
   return (
     <S.Wrapper>
       {currentPage !== 0 && (
-        <S.PrevBtn onClick={prevSlide}>
-          <S.Img src={arrow} alt="슬라이더 아이콘" />
+        <S.PrevBtn onClick={prevSlide} aria-label="이전 슬라이드 보기">
+          <S.Img src={arrow} alt="이전 슬라이더 아이콘" />
         </S.PrevBtn>
       )}
-      <CakeList cakeItem={currentCakes} />
+      <CakeList cakeItem={currentCakes} aria-label="다음 슬라이드 보기" />
       {currentPage !== totalPages - 1 && (
         <S.NextBtn onClick={nextSlide}>
-          <S.Img src={arrow} alt="슬라이더 아이콘" />
+          <S.Img src={arrow} alt="다음 슬라이더 아이콘" />
         </S.NextBtn>
       )}
     </S.Wrapper>

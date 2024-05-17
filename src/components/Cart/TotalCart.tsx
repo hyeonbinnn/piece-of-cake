@@ -35,8 +35,10 @@ const TotalCart = () => {
         </S.GetCartUl>
         <S.BottomBox>
           <S.ButtonBox>
-            <S.ManualBtn onClick={openModal}>설명서</S.ManualBtn>
-            <S.RefreshBtn onClick={cartItemRefresh} />
+            <S.ManualBtn onClick={openModal} aria-label="설명서 버튼">
+              설명서
+            </S.ManualBtn>
+            <S.RefreshBtn onClick={cartItemRefresh} aria-label="새로고침 버튼" />
           </S.ButtonBox>
           <S.TotalPrice>총금액 : {totalPrice.toLocaleString()}원</S.TotalPrice>
         </S.BottomBox>

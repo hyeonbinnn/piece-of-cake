@@ -50,8 +50,9 @@ const Wallet = () => {
           placeholder="충전액 입력"
           value={inputValue}
           onChange={handleInputChange}
+          aria-label="충전액 입력"
         />
-        <ClickButton text="충천" onClick={handleRecharge} />
+        <ClickButton text="충천" onClick={handleRecharge} aria-label="충전 버튼" />
       </S.ChargeBox>
     </S.Wrapper>
   );

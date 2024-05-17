@@ -53,7 +53,11 @@ const CakeList = ({ cakeItem }: CakeListProps) => {
       <S.CakeUl>
         {cakeItem.map((item: CakeItemData) => (
           <S.CakeLi key={item.id}>
-            <S.CakeBtn type="button" onClick={() => handleClickItem(item)}>
+            <S.CakeBtn
+              type="button"
+              onClick={() => handleClickItem(item)}
+              aria-label={`${item.name} 선택하기`}
+            >
               <S.CakeImg src={item.img} alt={item.name} loading="lazy" />
               <S.CakeName>{item.name}</S.CakeName>
               <S.CakeCost>₩ {item.cost.toLocaleString()}</S.CakeCost>

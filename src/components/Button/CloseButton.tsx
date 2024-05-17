@@ -4,7 +4,7 @@ import { OnCloseProps } from '../../types/data';
 
 const CloseButton = ({ onClose }: OnCloseProps) => {
   return (
-    <CloseBtn onClick={onClose}>
+    <CloseBtn onClick={onClose} type="button">
       <Img src={close} alt="닫기 버튼" />
     </CloseBtn>
   );

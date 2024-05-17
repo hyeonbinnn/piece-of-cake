@@ -98,7 +98,7 @@ const SpareCart = () => {
         <S.H2 className="title">잔액</S.H2>
         <S.P>{balance.toLocaleString()}원</S.P>
       </S.BalanceBox>
-      <Button text="거스름돈 반환" onClick={handleReturn} />
+      <Button text="거스름돈 반환" aria-label="거스름돈 반환 버튼" onClick={handleReturn} />
 
       <S.Label htmlFor="input-money" className="a11y-hidden">
         금액 투입
@@ -112,7 +112,7 @@ const SpareCart = () => {
         value={inputValue2}
         onChange={handleInputChange2}
       />
-      <Button text="입금" onClick={handleDeposit} />
+      <Button text="입금" aria-label="입금 버튼" onClick={handleDeposit} />
 
       <S.H2 className="a11y-hidden">예비 장바구니</S.H2>
       <S.CartUl>
@@ -125,7 +125,12 @@ const SpareCart = () => {
         ))}
       </S.CartUl>
 
-      <ClickButton text="획득" className="get-btn" onClick={handleClickGet} />
+      <ClickButton
+        text="획득"
+        className="get-btn"
+        onClick={handleClickGet}
+        aria-label="획득 버튼"
+      />
     </S.Container>
   );
 };
