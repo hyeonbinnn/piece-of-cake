@@ -4,7 +4,7 @@ import Section from '../../components/Section/Section';
 const MainPage = () => {
   return (
     <>
-      <Header isStartPage={false} />
+      <Header />
       <Section />
     </>
   );
