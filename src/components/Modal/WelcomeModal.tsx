@@ -19,11 +19,10 @@ const WelcomeModal = ({ onClose }: OnCloseProps) => {
       <S.Wrapper2>
         <CloseButton onClose={onClose} />
         <S.ContentBox>
-          <S.ContentP>
-            <S.Username>{username}님</S.Username> 환영합니다.
-          </S.ContentP>
+          <S.Username>{username} 님</S.Username>
+          <S.UserSpan>환영합니다.</S.UserSpan>
           <S.GoBox onClick={goToMain}>
-            <S.GoName>🍰 Piece of Cake 입장</S.GoName>
+            <S.GoName>🍰 Piece of Cake</S.GoName>
             <S.GoBtn>
               <S.GoImg src={go} alt="메인 페이지 이동 아이콘" />
             </S.GoBtn>

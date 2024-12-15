@@ -15,12 +15,13 @@ export const ContentBox = styled.div`
   margin: 10px 0;
 `;
 
-export const ContentP = styled.p`
-  font-size: 17px;
+export const Username = styled.p`
+  font-size: 25px;
 `;
 
-export const Username = styled.span`
-  font-size: 25px;
+export const UserSpan = styled.span`
+  font-size: 17px;
+  font-weight: bold;
 `;
 
 export const GoBox = styled.div`
@@ -40,4 +41,5 @@ export const GoImg = styled.img`
   width: 20px;
   height: 20px;
   transform: rotate(90deg);
+  margin-left: 10px;
 `;
