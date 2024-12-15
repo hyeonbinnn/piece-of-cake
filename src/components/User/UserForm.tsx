@@ -16,12 +16,14 @@ const UserForm = () => {
     register,
     formState: { isSubmitting, errors },
     handleSubmit,
-  } = useForm<FormData>({ mode: 'onBlur' });
+  } = useForm<FormData>({ mode: 'onChange' });
 
-  const onSubmit = (data: FormData): void => {
+  const onSubmit = (data: FormData) => {
+    localStorage.setItem('username', data.username);
     setUsername(data.username);
     openModal();
   };
+
   return (
     <>
       <S.Main>
@@ -38,8 +40,8 @@ const UserForm = () => {
               {...register('username', {
                 required: '닉네임은 필수 입력입니다.',
                 maxLength: {
-                  value: 4,
-                  message: '닉네임은 4자리 이하로 입력해주세요.',
+                  value: 3,
+                  message: '닉네임은 3자리 이하로 입력해주세요.',
                 },
               })}
               autoFocus
