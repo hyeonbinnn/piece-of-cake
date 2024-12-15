@@ -1,13 +1,14 @@
 import * as S from './Wallet.style';
 import ClickButton from '../Button/ClickButton';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRecoilState } from 'recoil';
-import { amountState } from '../../state/atoms/atoms';
+import { amountState, usernameState } from '../../state/atoms/atoms';
 import { Label, InputMoney } from '../Cart/SpareCart.style';
 
 const Wallet = () => {
   const [amount, setAmount] = useRecoilState(amountState);
   const [inputValue, setInputValue] = useState<string>('');
+  const [username, setUsername] = useRecoilState(usernameState);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     const newValue = e.target.value;
@@ -28,14 +29,27 @@ const Wallet = () => {
       return;
     }
 
+    if (inputValueNum > 1000000) {
+      alert('백만원 미만으로 입력해주세요.');
+      setInputValue('');
+      return;
+    }
+
     setAmount((prevAmount) => prevAmount + inputValueNum);
     setInputValue('');
   };
 
+  useEffect(() => {
+    const savedUsername = localStorage.getItem('username');
+    if (savedUsername) {
+      setUsername(savedUsername); // Recoil 상태 업데이트
+    }
+  }, [setUsername]);
+
   return (
     <S.Wrapper>
       <S.CashBox className="color-box">
-        <S.H2 className="title">소지금</S.H2>
+        <S.H2 className="title">{username}님 소지금</S.H2>
         <S.P>{amount.toLocaleString()}원</S.P>
       </S.CashBox>
       <S.ChargeBox>
