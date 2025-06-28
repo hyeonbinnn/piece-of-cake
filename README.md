@@ -69,7 +69,7 @@
 <img src="https://img.shields.io/badge/typescript-3178C6?style=square&logo=typescript&logoColor=white">
 <img src="https://img.shields.io/badge/React-61DAFB?style=square&logo=react&logoColor=black">
 <img src="https://img.shields.io/badge/Recoil-3578E5?style=square&logo=recoil&logoColor=white">
-<img src="https://img.shields.io/badge/Styled Components-DB7093?style=square&logo=styled components&logoColor=white">
+<img src="https://img.shields.io/badge/Styled Components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white">
 </div>
 
 <br>
