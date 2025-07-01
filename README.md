@@ -118,9 +118,9 @@
 
 ## 트러블 슈팅
 ### 1. 상태 관리 개선
-총금액을 계산할 때, `calculateTotalPrice` 함수를 컴포넌트 내에서 직접 호출하고, `useRecoilState` 훅을 통해 상태 저장소의 `totalCartItemState` 상태를 가져와서 사용하고 있다.
+총금액을 계산할 때, `calculateTotalPrice` 함수를 컴포넌트 내에서 직접 호출하고, `useRecoilState` 훅을 통해 상태 저장소의 `totalCartItemState` 상태를 가져와서 사용했습니다.
 
-하지만 이는 컴포넌트 내에 로직이 섞여 복잡성이 증가하고, 상태 업데이트와 같은 다른 부분에 영향을 미칠 수 있다!
+하지만 이는 컴포넌트 내에 로직이 섞여 복잡성이 증가하고, 상태 업데이트와 같은 다른 부분에 영향을 미칠 수 있습니다.
 
 #### [ 변경 전 ]
 ```tsx
@@ -147,7 +147,7 @@ return (
 ```
 <br>
 
-따라서 총금액 계산하는 부분을 셀렉터를 사용해 상태 관리 로직에서 분리시켜 컴포넌트는 UI에만 집중하고, 선택자는 데이터의 계산과 처리에 집중할 수 있도록 했다.
+따라서 총금액 계산하는 부분을 셀렉터를 사용해 상태 관리 로직에서 분리시켜 컴포넌트는 UI에만 집중하고, 선택자는 데이터의 계산과 처리에 집중할 수 있도록 했습니다.
 ```ts
 // selector.ts
 export const totalPriceSelector = selector<number>({
@@ -163,8 +163,7 @@ export const totalPriceSelector = selector<number>({
 ```
 <br>
 
-`useRecoilValue` 훅을 통해 셀렉터에서 만든 `totalPriceSelector`를 가져와서 `totalPrice` 변수에 저장해서 사용하면 코드가 간결해지고, 유지보수에 용이해진다!
-
+`useRecoilValue` 훅을 통해 셀렉터에서 만든 `totalPriceSelector`를 가져와서 `totalPrice` 변수에 저장해서 사용하면 코드가 간결해지고, 유지보수가 쉬워집니다.
 #### [ 변경 후 ]
 ```tsx
 // TotalCart.tsx
@@ -185,9 +184,9 @@ return (
 <br>
 
 ### 2. 초기화 시, 잔액 합산 오류
-장바구니 초기화 버튼을 클릭할 때, `cartItemRefresh` 함수를 통해 장바구니에 있는 아이템들을 초기화시키며 `useRecoilState` 훅을 통해 상태 저장소의 `totalCartItemState` 상태를 가져와서`setCartItem`을 업데이트하고 있다.
+장바구니 초기화 버튼을 클릭할 때, `cartItemRefresh` 함수를 통해 장바구니에 있는 아이템들을 초기화시키며 `useRecoilState` 훅을 통해 상태 저장소의 `totalCartItemState` 상태를 가져와서`setCartItem`을 업데이트하고 있습니다.
 
-초기화가 되면서 총금액이 다시 잔액과 합산되어 계산되어야 하는데, 장바구니만 초기화가 이루어지고 있다!
+초기화가 되면서 총금액이 다시 잔액과 합산되어 계산되어야 하는데, 장바구니만 초기화가 이루어지고 있습니다.
 
 #### [ 변경 전 ]
 ```tsx
@@ -210,7 +209,7 @@ return (
 ```
 <br>
 
-따라서 장바구니를 초기화한 뒤, 총금액과 소지금을 더해주는 값을 계산해야하기 때문에, 셀렉터에서 총금액 + 잔액을 계산하는 선택자 `totalPriceAmountSelector`를 만들었다.
+따라서 장바구니를 초기화한 뒤, 총금액과 소지금을 더해주는 값을 계산해야하기 때문에, 셀렉터에서 총금액 + 잔액을 계산하는 선택자 `totalPriceAmountSelector`를 만들었습니다.
 ```ts
 // selector.ts
 export const totalPriceAmountSelector = selector<number>({
@@ -224,11 +223,11 @@ export const totalPriceAmountSelector = selector<number>({
 ```
 <br>
 
-그리고 `cartItemRefresh` 함수에서 `useSetRecoilState` 훅을 통해 상태 저장소에서 잔액 관련 `balanceState` 상태를 가져온다. 
+그리고 `cartItemRefresh` 함수에서 `useSetRecoilState` 훅을 통해 상태 저장소에서 잔액 관련 `balanceState` 상태를 가져옵니다.
 
-그 다음, `useRecoilValue` 훅을 통해 `totalPriceAmountSelector` 선택자를 `totalPriceBalance` 변수에 저장하고, `setBalance`를 통해 해당 변수를 업데이트 하면 된다!
+그 다음, `useRecoilValue` 훅을 통해 `totalPriceAmountSelector` 선택자를 `totalPriceBalance` 변수에 저장하고, `setBalance`를 통해 해당 변수를 업데이트합니다.
 
-이렇게 하면 장바구니를 초기화하는 동시에 잔액도 함께 업데이트된다! 😉
+이렇게 하면 장바구니를 초기화하는 동시에 잔액도 함께 업데이트됩니다.
 
 #### [ 변경 후 ]
 ```tsx
